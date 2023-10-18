@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 # Generate Prisma client
-#RUN npx prisma generate
+RUN npx prisma generate
 
 # Expose the port the backend app runs on
 EXPOSE 5100
