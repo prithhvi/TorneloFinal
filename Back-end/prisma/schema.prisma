@@ -50,7 +50,6 @@ model Analytics {
 model User {
   createdAt     DateTime? @default(now()) @db.Timestamptz(6)
   userId        Int       @id @unique(map: "User_user_id_key")
-  userId        Int       @id @unique(map: "User_user_id_key")
   userEmail     String?
   userAddress   String?
   userPhoneNo   String?
