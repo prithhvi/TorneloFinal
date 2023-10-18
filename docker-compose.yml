@@ -1,11 +1,11 @@
-version: '3'
+version: '3.8'
 services:
   backend:
     build:
       context: ./Back-end/tornelo-back-end
       dockerfile: Dockerfile.backend
     ports:
-      - "5000:5000"
+      - "5001:5000"
     depends_on:
       - database
 
@@ -19,6 +19,7 @@ services:
   database:
     image: postgres:latest
     environment:
-      - DATABASE_URL= "postgres://postgres:Welikechess1234@db.zvtbsbscwazqnadhpfvv.supabase.co:6543/postgres?pgbouncer=true"
+      - DATABASE_URL=postgres://postgres:Welikechess1234@db.zvtbsbscwazqnadhpfvv.supabase.co:6543/postgres?pgbouncer=true
+      - POSTGRES_HOST_AUTH_METHOD=trust
     ports:
-      - "6543:6543"  # Adjust the port as per your database configuration
+      - "6543:6543"
