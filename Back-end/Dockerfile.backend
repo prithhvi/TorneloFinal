@@ -8,7 +8,7 @@ WORKDIR /app
 ENV POSTGRES_HOST_AUTH_METHOD=trust
 
 # Copy package files and install dependencies
-COPY TORNELOFINAL/Back-end/package.json /app/
+COPY Back-end/package.json /app/
 RUN yarn install
 
 # Copy the rest of the application files

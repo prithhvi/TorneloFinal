@@ -5,7 +5,7 @@ FROM node:latest
 WORKDIR /app
 
 # Copy package files and install dependencies
-COPY TORNELOFINAL/Front-end/package.json /app/
+COPY Front-end/package.json /app/
 RUN yarn install
 
 # Copy the rest of the application files
