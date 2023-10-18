@@ -1,0 +1,3 @@
+[submodule "Front-end"]
+	path = Front-end
+	url = https://github.com/Tornelo/Front-end.git
