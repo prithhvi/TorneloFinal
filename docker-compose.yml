@@ -1,20 +1,18 @@
 version: '3.8'
 services:
-  backend:
-    build:
-      context: ./Back-end
-      dockerfile: Dockerfile.backend
-    ports:
-      - "5001:5000"
-    depends_on:
-      - database
-
   frontend:
     build:
       context: ./Front-end
       dockerfile: Dockerfile.frontend
     ports:
-      - "3000:3000"
+      - "3000:3000"  # Expose the container port to the host, adjust if necessary
+
+  backend:
+    build:
+      context: ./Back-end
+      dockerfile: Dockerfile.backend
+    ports:
+      - "5100:5100"  # Expose the container port to the host, adjust if necessary
 
   database:
     image: postgres:latest

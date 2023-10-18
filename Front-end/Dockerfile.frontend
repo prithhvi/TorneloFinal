@@ -4,15 +4,16 @@ FROM node:latest
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy package files and install dependencies
-COPY Front-end/package.json /app/
-RUN yarn install
+# Copy package files and install dependencies for the frontend
+COPY package.json .
+COPY package-lock.json .
+RUN npm install
 
-# Copy the rest of the application files
+# Copy the rest of the frontend application files
 COPY . .
 
-# Expose the port the app runs on
+# Expose the port the frontend app runs on
 EXPOSE 3000
 
-# Define the command to start the app
+# Define the command to start the frontend app
 CMD ["npm", "start"]
