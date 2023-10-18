@@ -1,0 +1,205 @@
+
+.shipping-page {
+    background-color: #EFF5FB;
+  }
+  
+
+
+
+
+.label {
+    width: 78px;
+    height: 17px;
+
+    /* Body/Primary/SemiBold */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    /* identical to box height, or 17px */
+
+
+    /* Neutral/Neutral-700 */
+
+    color: #42505E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.mandatory {
+  color: red;
+  margin-left: 4px; /* Add some spacing between the label text and the asterisk */
+}
+
+.required {
+  color: red;
+  margin-left: 20px; /* Add some spacing between the label text and the asterisk */
+  font-size: smaller;
+}
+
+.input {
+  /* Input */
+  box-sizing: border-box;
+  width: 100%; /* Adjust the width as needed */
+  height: 36px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  border: 1px solid #B8CCE0;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #42505E;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add a margin to separate it from the form */
+  }
+  
+
+.proceed-button {    
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+
+    height: 35px;   
+    /* Secondary/secondary-500 */
+    border: 1px solid;
+    background: #FFBF00;
+    border-radius: 8px;
+  }
+
+.proceed-button .proceed-text{
+    width: 76px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 120%;
+    /* Neutral/Neutral-900 */
+    color: #1E262F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+  
+
+  .form-row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .form-column {
+    flex-basis: 45%; /* Adjust the width as needed */
+  }
+
+ 
+
+  
+
+
+  .cancel-button {
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 77px;
+    height: 35px;  
+    /* Secondary/secondary-500 */
+    border: 1px solid #B8CCE0;  
+    background: #ffffff;
+    border-radius: 8px;
+  }
+
+  .cancel-button .cancel-text{
+    width: 76px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 120%;
+    /* Neutral/Neutral-900 */
+    color: #1E262F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.shipping-page-title{
+  margin-left: 20px;
+}
+
+.error-message{
+  margin-left: 20px;
+  width: max-content;
+  height: 17px;
+
+  /* Body/Primary/SemiBold */
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  padding: 5px;
+  background-color: lightcoral;
+}
+
+
+
+/* Add a media query to target smaller screens */
+@media screen and (max-width: 768px) {
+
+  .form-column {
+    flex-basis: 100%; /* Change to full width for a single column layout */
+  }
+
+  /* Adjust label styles for smaller screens */
+  .label {
+    width: 100%; /* Full width for labels */
+  }
+
+  /* Adjust input styles for smaller screens */
+  .input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    justify-content: center; /* Center align buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 20px;
+  }
+
+  /* Adjust button styles for smaller screens */
+  .proceed-button,
+  .cancel-button {
+    width: 100%; /* Full width buttons */
+  }
+
+  .shipping-page-title {
+    text-align: center; /* Center-align the title */
+    margin: 20px 0; /* Add space around the title */
+  }
+
+  .error-message {
+    width: 100%; /* Full width error message */
+    margin: 10px 0; /* Add space around the error message */
+  }
+}
+

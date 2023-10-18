@@ -1,0 +1,215 @@
+
+body {
+    background-color: #EFF5FB;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+.label {
+    width: 78px;
+    height: 17px;
+
+    /* Body/Primary/SemiBold */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    /* identical to box height, or 17px */
+
+
+    /* Neutral/Neutral-700 */
+
+    color: #42505E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.input {
+  /* Input */
+  box-sizing: border-box;
+  width: 100%; /* Adjust the width as needed */
+  height: 36px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  border: 1px solid #B8CCE0;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #42505E;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add a margin to separate it from the form */
+  }
+  
+
+.save-button {    
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 77px;
+    height: 35px;   
+    /* Secondary/secondary-500 */
+    border: none;
+    background: #FFBF00;
+    border-radius: 8px;
+  }
+
+.save-button .save-text{
+    width: 76px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 120%;
+    /* Neutral/Neutral-900 */
+    color: #1E262F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+  .file-upload {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #42505E;
+    border: 1px solid #B8CCE0;  
+    background: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-column {
+    flex-basis: 45%; /* Adjust the width as needed */
+  }
+
+  .text-field {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-2 {
+    width: 100px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    /* Neutral/Neutral-900 */
+    color: #1E262F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+  }
+
+  .uploaded-image {
+    margin-left: 10px;
+    max-width: 200px; /* Set the maximum width */
+    max-height: 200px; /* Set the maximum height */
+    object-fit: contain; /* Adjust how the image fits within the container */
+  }
+
+
+  .cancel-button {
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 77px;
+    height: 35px;  
+    /* Secondary/secondary-500 */
+    border: 1px solid #B8CCE0;  
+    background: #ffffff;
+    border-radius: 8px;
+  }
+
+  .cancel-button .cancel-text{
+    width: 76px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 120%;
+    /* Neutral/Neutral-900 */
+    color: #1E262F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.AddPageTitle{
+  margin-left: 20px;
+}
+
+.DescriptionInput{
+  /* Input */
+  box-sizing: border-box;
+  width: 97%; /* Adjust the width as needed */
+  height: 80px;
+  padding: 8px 16px;
+  background: #FFFFFF;
+  border: 1px solid #B8CCE0;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #42505E;
+  margin-left: 0px;
+}
+
+.form-column .DescriptionLabel{
+  width: 78px;
+  height: 17px;
+  /* Body/Primary/SemiBold */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* Neutral/Neutral-700 */
+  color: #42505E;
+  /* Inside auto layout */
+  margin-bottom: 100px;
+  margin-left: 2px
+}
+
+.ImageLabel{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* Neutral/Neutral-700 */
+  color: #42505E;
+  margin-left: 2px
+}

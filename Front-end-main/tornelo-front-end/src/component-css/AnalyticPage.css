@@ -1,0 +1,87 @@
+/* AnalyticPage.css */
+
+/* Page container */
+.table-container {
+  padding: 20px;
+}
+
+/* Page title */
+.Analytic-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+body {
+  overflow:auto;
+}
+
+/* Dropdown selector */
+.month-selector label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.month-selector select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Table styles */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+}
+
+.back-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 5px;
+  position: absolute;
+  width: 80%;
+  max-width: 136px;
+  height: 60%;
+  max-height: 36px;
+  right: 350px;
+  top: 30px;
+  
+  /* Secondary/secondary-500 */
+  border: 1px solid #B8CCE0;  
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+/* Apply responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Table */
+  .styled-table {
+    font-size: 14px;
+  }
+  /* Adjust chart width */
+  .line-chart {
+    width: 100%;
+  }
+  /* Reduce font size and line thickness on charts */
+  .recharts-legend {
+    font-size: 12px;
+  }
+}
+
+
+
+
+  

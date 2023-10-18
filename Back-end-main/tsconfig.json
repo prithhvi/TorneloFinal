@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./dist/tornelo-back-end/routes",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "tornelo-back-end/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

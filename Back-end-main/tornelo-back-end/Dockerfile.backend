@@ -1,0 +1,22 @@
+# Use an official Node runtime as a parent image
+FROM node:14-alpine
+
+# Set the working directory to /src
+WORKDIR /src
+
+# Copy the package.json and yarn.lock file to the working directory
+COPY package.json yarn.lock ./
+
+# Install app dependencies
+RUN yarn install
+
+# Copy the current directory contents into the container at /src
+COPY . /src
+
+# Expose port 3000 for the container
+
+ENV PORT=3000
+EXPOSE 3000
+
+# Start the app
+CMD ["yarn", "start"]
