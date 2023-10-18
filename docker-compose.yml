@@ -2,7 +2,7 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./Back-end/tornelo-back-end
+      context: ./Back-end
       dockerfile: Dockerfile.backend
     ports:
       - "5001:5000"
@@ -11,7 +11,7 @@ services:
 
   frontend:
     build:
-      context: ./Front-end/tornelo-front-end
+      context: ./Front-end
       dockerfile: Dockerfile.frontend
     ports:
       - "3000:3000"
