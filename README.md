@@ -25,3 +25,7 @@ docker-compose up --build
 
 **Access the Application:**
 Once the build process is complete, you can access the application by opening a web browser and visiting http://localhost:3000.
+
+
+**Access the Application Via The Docker Desktop:**
+You only need to follow these steps once. For subsequent runs of the project, just open Docker Desktop, access the container within the application, and start it. That's all there is to it!
