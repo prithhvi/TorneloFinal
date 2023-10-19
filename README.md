@@ -29,3 +29,8 @@ Once the build process is complete, you can access the application by opening a 
 
 **Access the Application Via The Docker Desktop:**
 You only need to follow these steps once. For subsequent runs of the project, just open Docker Desktop, access the container within the application, and start it. That's all there is to it!
+
+# Video demonstration of the application
+
+https://drive.google.com/file/d/1IRdVi9ZcaZyWS-5Yr54UpcdJyMzl5zif/view?usp=share_link
+
